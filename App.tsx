@@ -77,8 +77,7 @@ function App(): JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Langkah Pertama">
-            Edit <Text style={styles.highlight}>App.tsx</Text> untuk merubah this
-            screen and then come back to see your edits.
+            Edit 
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
