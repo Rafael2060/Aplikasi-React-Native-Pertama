@@ -15,6 +15,7 @@ import {
   Text,
   useColorScheme,
   View,
+  Image
 } from 'react-native';
 
 import {
@@ -24,6 +25,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+
+
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -70,7 +73,9 @@ function App(): JSX.Element {
       />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
+        style={backgroundStyle}
+        
+        >
         <Header />
         <View
           style={{
@@ -87,6 +92,16 @@ function App(): JSX.Element {
           </Section>
           <Section title="Learn More">
             Read the docs to discover what to do next:
+          </Section>
+          <Section title="Coba">
+            Section Coba
+
+            <Image source={require('./images/irene.jpg')} />;
+
+            {/* <Image 
+            style={{width:100, height: 100}}
+            // source={{uri : 'https://awsimages.detik.net.id/community/media/visual/2021/12/08/idol-kpop-dikenal-sebagai-ulzzang-1_43.jpeg?w=700&q=90'}} />
+            source={irene} /> */}
           </Section>
           <LearnMoreLinks />
         </View>
